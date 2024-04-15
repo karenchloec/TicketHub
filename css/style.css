@@ -1,22 +1,80 @@
-body, h1, p {
-    margin: 0;
-    padding: 0;
+
+/*@media screen and (min-width: 390px) and (max-width: 390px) {}*/
+
+body {
+    padding-bottom: 60px;
 }
 
-@media screen and (min-width: 390px) and (max-width: 390px) {
-
-    .logo {
-        height: 50px;
-        width: auto;
+    .statusBar {
+        height: auto;
+        max-width: 100%;
     }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+    text-align: center;
+    height: 150px;
+    padding-top: 20px;
 }
 
-.carousel {
-
-
+.logo-containter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.events-you-might-like {
-    diaplay: flex;
-    overflow-x: auto;
+.logo {
+    max-width: 40%;
+    height: auto;
 }
+
+    .carousel {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: block;
+        opacity: 0;
+    }
+
+    .carousel-image.active {
+        opacity: 1;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+        padding: 15px;
+        }
+
+    .footer-icon {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icon img {
+        max-width: 100%;
+        height: auto
+    }
