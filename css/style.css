@@ -52,6 +52,41 @@ header {
         opacity: 1;
     }
 
+    .eventsYouMightLike {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .recommendations {
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .image-container {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .recommendations img {
+        flex: 0 0 auto;
+        max-height: 150px;
+        width: auto;
+        object-fit: cover;
+    }
+
     .footer-nav {
         display: flex;
         justify-content: space-around;
