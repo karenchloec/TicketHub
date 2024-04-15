@@ -1,0 +1,22 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 390px) and (max-width: 390px) {
+
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+}
+
+.carousel {
+
+
+}
+
+.events-you-might-like {
+    diaplay: flex;
+    overflow-x: auto;
+}
